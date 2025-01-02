@@ -26,21 +26,29 @@
   <script>
     // Your web app's Firebase configuration
     const firebaseConfig = {
-  apiKey: "AIzaSyAqs1T5nm0ZCC_WU4oZlEQ67U5APHBAuzA",
-  authDomain: "portfolio-f8c82.firebaseapp.com",
-  projectId: "portfolio-f8c82",
-  storageBucket: "portfolio-f8c82.firebasestorage.app",
-  messagingSenderId: "434174244128",
-  appId: "1:434174244128:web:5ed5757dfe8d63fdefd345",
-  measurementId: "G-ZMFQYPDYMC"
+      apiKey: "AIzaSyAqs1T5nm0ZCC_WU4oZlEQ67U5APHBAuzA",
+      authDomain: "portfolio-f8c82.firebaseapp.com",
+      projectId: "portfolio-f8c82",
+      storageBucket: "portfolio-f8c82.firebasestorage.app",
+      messagingSenderId: "434174244128",
+      appId: "1:434174244128:web:5ed5757dfe8d63fdefd345",
+      measurementId: "G-ZMFQYPDYMC"
     };
 
     // Initialize Firebase
     const app = firebase.initializeApp(firebaseConfig);
     const analytics = firebase.analytics(app);
+
+    // Debugging Firebase Analytics
+    console.log("Firebase initialized: ", app);
+    console.log("Firebase Analytics initialized: ", analytics);
+
+    // Optional: Enable debug mode for analytics
+    analytics.setDebugModeEnabled && analytics.setDebugModeEnabled(true);
   </script>
 </head>
 <body>
+  <!-- Flutter App -->
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
